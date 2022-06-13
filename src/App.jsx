@@ -17,7 +17,7 @@ function App() {
     <>
       <GlobalStyle />
 
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Homepages />} />
           <Route path="/docs" element={<Docs />} />
